@@ -30,7 +30,7 @@ jobs:
                     push: false
                     tags: ${{secrets.DOCKER_HUB_USR}}/spring-boot-for-beginners:$(date- '%Y-%m-%d')
             - name: login to docker hub 
-              uses: docker/login-actions@v1
+              uses: docker/login-action@v1
               with:
                     username: ${{secrets.DOCKER_HUB_USR}}
                     password: ${{secrets.DOCKER_HUB_TOKEN}}
