@@ -1,4 +1,4 @@
-name: Build
+name: maven-sq
 on:
   push:
     branches:
